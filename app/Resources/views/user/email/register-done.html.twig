@@ -1,0 +1,10 @@
+{% extends 'user/email/email-layout.html.twig' %}
+
+{% block body_text %}
+{{ 'Click on the following link to activate your account ' ~ activationUrl }}
+{% endblock %}
+
+{% block body_html_content %}
+    {% set html_text = 'Click <a href="' ~ activationUrl ~ '" target="_blank">here</a> to activate your account' %}
+    {{ html_text|raw }}
+{% endblock %}
