@@ -12,16 +12,13 @@ use AppBundle\Entity\User;
 use AppBundle\Form\User\RegistrationType;
 use AppBundle\Form\User\RequestResetPasswordType;
 use AppBundle\Form\User\ResetPasswordType;
-use AppBundle\Security\LoginFormAuthenticator;
 use AppBundle\Service\Mailer;
 use AppBundle\Service\TokenGenerator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
-use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
 use Symfony\Component\Translation\TranslatorInterface;
 use Symfony\Component\Validator\Exception\ValidatorException;
 
